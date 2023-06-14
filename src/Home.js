@@ -14,8 +14,8 @@ function Home(){
             await logOut()
             navigate('/')
         }
-        catch(err){
-            setError(err.message)
+        catch(error){
+            console.log(error.message)
         }
     }
     return(
