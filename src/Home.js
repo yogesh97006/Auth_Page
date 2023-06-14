@@ -5,7 +5,7 @@ import {  useState } from "react"
 
 function Home(){
     const {User}=useUserAuth()
-    const [Error,setError]=useState('')
+    // const [Error,setError]=useState('')
     const {logOut} =useUserAuth()
     const navigate=useNavigate()
 
@@ -21,8 +21,8 @@ function Home(){
     return(
         <div>
             <h1>Welcome ! {User.email}</h1>
-            {Error}
-            <Button onClick={handleButton}>Log Out</Button>
+            {/* {Error} */}
+            {/* <Button onClick={handleButton}>Log Out</Button> */}
         </div>
     )
 }
