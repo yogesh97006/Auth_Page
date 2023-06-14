@@ -8,7 +8,6 @@ function Home(){
     const [Error,setError]=useState('')
     const {logOut} =useUserAuth()
     const navigate=useNavigate()
-    console.log(User)
 
     const handleButton=async ()=>{
         try{
